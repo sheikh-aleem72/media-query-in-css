@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navigation</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+      }
+      nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #312929;
+        color: #fff;
+        padding: 10px 20px;
+        height: 10vh;
+      }
+      li {
+        list-style: none;
+        font-size: 20px;
+
+        padding: 10px;
+      }
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          background-color: grey;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Portfolio</li>
+      <li>Contact</li>
+    </nav>
+  </body>
+</html>
